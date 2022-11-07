@@ -1,31 +1,13 @@
-<?php
+<?php echo "Hello World !"; ?>
 
-class Message {
-  public $msg = "php is best on the world!";
-}
+<form method="post">
+  <p>姓名: <input type="text" name="name" /></p>
+  <p>年龄: <input type="text" name="age" /></p>
+  <p><input type="submit" /></p>
+</form>
 
-$message = new Message;
-for ($i=0;$i<4;$i++){
-  echo '<h3>'.$message->msg.'</h3>';
+<?php 
+if($_POST['name']){
+  echo '你好,'.$_POST['name'].'你'.$_POST['age'].'岁了';
 }
 ?>
-
-<style>
-body{
-  width:100%;
-  height:100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background-color: aliceblue;
-}
-h3 {
-  color:tomato;
-  font-size: 42px;
-}
-</style>
-
-
-
