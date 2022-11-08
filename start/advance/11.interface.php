@@ -4,8 +4,13 @@
 interface Data{
   const Name = 'Tom';
   public static function test();
-  public function demo();
 }
 
+class Person implements Data {
+  public static function test() {
+    echo '静态测试';
+  }
+}
 
-// echo '<hr>'; 
+$method = new Person();
+$method->test();
