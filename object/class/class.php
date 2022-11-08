@@ -67,6 +67,3 @@ echo "<hr>";
 
 $customer2 = new Customers('missu', 'missu@qq.com','10086');
 echo $customer2->getSalary();
-
-?>
-

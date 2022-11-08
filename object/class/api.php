@@ -96,5 +96,4 @@ $sql_get = "SELECT * FROM `fruit_list`";
 // 删除数据
 //deleteData($sql_delete)
 // 查询数据
-get_Data($sql_get)
-?>
+get_Data($sql_get);
