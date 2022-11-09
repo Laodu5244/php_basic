@@ -13,7 +13,6 @@ header("Access-Control-Allow-Credentials:true");
 function insertData($sql_add) {
   global $mysqli;
   $result = $mysqli->query($sql_add);
-
   if ($result) { echo "添加成功"; } 
   else { echo "添加失败"; }
 }
@@ -22,7 +21,6 @@ function insertData($sql_add) {
 function updateData($sql_update) {
   global $mysqli;
   $result = $mysqli->query($sql_update);
-
   if ($result) { echo "更新成功"; } 
   else { echo "更新失败"; }
 }
@@ -31,7 +29,6 @@ function updateData($sql_update) {
 function deleteData($sql_delete) {
   global $mysqli;
   $result = $mysqli->query($sql_delete);
-
   if ($result) { echo "删除成功"; } 
   else { echo "删除失败"; }
 }
@@ -40,7 +37,6 @@ function deleteData($sql_delete) {
 function get_Data($sql_get) {
   global $mysqli;
   $result = $mysqli->query($sql_get);
-
   $fruits = $result->fetch_all(MYSQLI_ASSOC);
   echo json_encode($fruits);
 }
