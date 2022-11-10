@@ -6,8 +6,7 @@ $conn->query('set names utf8');
 
 $res = ['success' => true];
 
-$sql = "insert into fruits (fruit,price)
-values ('榴莲',23.8)";
+$sql = "insert into fruits (fruit,price) values ('榴莲',23.8)";
 $result = $conn->query($sql);
 
 if ($result) {
