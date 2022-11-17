@@ -15,8 +15,3 @@ else echo '添加失败'; */
 $stmt = mysqli_query($conn,'select * from heros');
 $heros = mysqli_fetch_all($stmt,MYSQLI_ASSOC);
 echo json_encode($heros);
-
-
-
-
-

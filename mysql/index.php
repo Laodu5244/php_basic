@@ -15,8 +15,8 @@ $conn->close();
 $pdo = new PDO("mysql:host=localhost;dbname=tp",'root','sisisi');
 $stmt = $pdo->prepare('select * from heros');
 
-// $stmt->execute();
-// $heros = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$stmt->execute();
+$heros = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // echo json_encode($heros);
-// $pdo = null;
+$pdo = null;
