@@ -1,5 +1,6 @@
 <?php
 
+header('Content-Type:application/json');
 // mysqli连接数据库
 $conn = new Mysqli('localhost','root','sisisi','tp') or exit('数据库连接失败');
 $conn->query('set names utf8');

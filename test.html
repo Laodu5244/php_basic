@@ -17,7 +17,7 @@ new Vue({
   el:'.app',
   methods:{
     async getData(){
-      let url = 'http://api.com/db.php';
+      let url = 'http://localhost/mysql/api/list.php';
       let $res = await axios.get(url);
       console.log($res)
     }
