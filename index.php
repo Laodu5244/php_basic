@@ -7,7 +7,6 @@
 </body>
 
 <?php 
-
-if($_POST['name']){
-  echo '你好,'.$_POST['name'].'你'.$_POST['age'].'岁了';
-} 
+if($_POST['name'] && $_POST['age']){
+  echo '你好'.$_POST['name'].'，'.'你'.$_POST['age'].'岁了.';
+} ?>
