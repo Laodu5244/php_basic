@@ -65,6 +65,6 @@ function cache($name,$data=null){
 }
 $data = include 'database.php';
 // 储存文件到cache目录
-cache('database',$data);
+cache('db',$data);
 // 输出缓存的文件
-print_r(cache('database'));
+print_r(cache('db'));

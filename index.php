@@ -9,4 +9,6 @@
 <?php 
 if($_POST['name'] && $_POST['age']){
   echo '你好'.$_POST['name'].'，'.'你'.$_POST['age'].'岁了.';
+} else {
+	echo '姓名/年龄不能为空';
 } ?>
