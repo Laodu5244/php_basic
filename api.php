@@ -1,6 +1,6 @@
 <?php
 
-$conn = new PDO('mysql:host=localhost;dbname=basic','root','sisisi');
+$conn = new PDO('mysql:host=localhost;dbname=basic', 'root', 'sisisi');
 $res = $conn->query('select * from heros');
 
 $res->execute();
