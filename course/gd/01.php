@@ -20,4 +20,3 @@ echo '<br>';
 $str = '1234567890abcdefghijklmnopqrstuvwxyz';
 $a = $str[mt_rand(0,strlen($str)-1)];
 var_dump($a);
-phpinfo();

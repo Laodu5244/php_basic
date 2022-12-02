@@ -26,6 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../web/cli/cli2-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,6 +48,7 @@
       <workItem from="1669450669051" duration="1429000" />
       <workItem from="1669457665618" duration="4904000" />
       <workItem from="1669463011234" duration="1034000" />
+      <workItem from="1669893774569" duration="41000" />
     </task>
     <servers />
   </component>

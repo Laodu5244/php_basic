@@ -1,7 +1,9 @@
 <?php
 
-$conn = new mysqli('localhost','root','sisisi','tp');
-$res = $conn->query('select * from fruits');
+$conn = new PDO('mysql:host=localhost;dbname=basic','root','sisisi');
+$res = $conn->query('select * from heros');
 
-$fruits = $res->fetch_all(MYSQLI_ASSOC);
-echo json_encode($fruits);
+$res->execute();
+$heros = $res->fetchAll(PDO::FETCH_ASSOC);
+
+echo json_encode($heros);
