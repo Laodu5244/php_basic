@@ -33,10 +33,18 @@ class Person{
 	public function __unset($name){
 		echo '__unset方法执行了';
 	}
+
+	// 调用一个不存在的方法时执行
+	public function __call($name,$value) {
+		echo '__call方法执行了';
+	}
+	// 调用一个不存在的静态方法时执行
+	public static function __callStatic($name,$value){
+		echo '__callStatic方法执行了';
+	}
 }
 
 $person = new Person('Lisa');
-
 $person->data; // __get
 echo '<br>';
 $person->data = [3,2,1]; // __set
@@ -47,4 +55,9 @@ echo '<br>';
 var_dump(isset($person->age)); // __isset
 echo '<br>';
 var_dump(isset($person->name)); 
+echo '<br>';
+
+$person->call(); // __call
+echo '<br>';
+Person::callStatic(); // __callStatic
 echo '<br>';
