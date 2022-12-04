@@ -4,7 +4,9 @@
 ?>
 
 <main class="container">
-	<p><?="php is best on the world."?></p>
+	<p>
+		<?="php is best on the world."?>
+	</p>
 </main>
 
 <?php require_once '../partials/footer.php'?>

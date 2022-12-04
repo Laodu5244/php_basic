@@ -2,9 +2,8 @@
 	require_once '../partials/header.php';
 	require_once '../partials/nav.php';
 	
-	require '../db/article_api.php';
-	require '../db/filter.php';
-
+	require_once '../controller/article_api.php';
+	require_once '../controller/methods.php';
 	$articles = select();
 ?>
 
