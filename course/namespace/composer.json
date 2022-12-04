@@ -1,0 +1,15 @@
+{
+	"name": "laodu/namespace",
+	"autoload": {
+		"psr-4": {
+			"App\\": "./App"
+		}
+	},
+	"authors": [
+		{
+			"name": "laodu",
+			"email": "laodu5244@163.com"
+		}
+	],
+	"require": {}
+}

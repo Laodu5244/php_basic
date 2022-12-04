@@ -1,20 +1,20 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand blog" href="../">我的博客</a>
+    <a class="navbar-brand blog" href="/">我的博客</a>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../">
+          <a class="nav-link active" aria-current="page" href="/">
 					  <?= '主页' ?>
 					</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../about.php">
+          <a class="nav-link" href="/about">
 						<?= '关于' ?>
 					</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../article.php">
+          <a class="nav-link" href="/article">
 					  <?= '文章' ?>
 					</a>
         </li>
@@ -36,5 +36,8 @@
 	font-weight: bold;
 	color: orangered;
 	font-size: 26px;
+}
+.navbar {
+  margin-bottom: 12px;
 }
 </style>
