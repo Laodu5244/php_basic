@@ -17,10 +17,8 @@ new Vue({
   el:'.app',
   methods:{
     async getData(){
-      let url = 'http://localhost/mysql/restful.php?action=delete';
-      let fd = new FormData();
-      fd.append('id',19);
-      let $res = await axios.post(url,fd);
+      let url = 'http://localhost/course/mysql/01.php';
+      let $res = await axios(url);
       console.log($res)
     }
   }
