@@ -10,4 +10,5 @@ mysqli_set_charset($conn,'utf8');
 $stmt = $conn->query('select * from fruits');
 $users = $stmt->fetch_all(MYSQLI_ASSOC);
 
-echo json_encode($users);
+// echo json_encode($users);
+var_dump($users);
