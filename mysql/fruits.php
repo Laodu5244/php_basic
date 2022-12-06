@@ -14,4 +14,4 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
 $res = $pdo->query("SELECT * FROM `users`");
 $users = $res->fetchALL(PDO::FETCH_ASSOC);
 
-// echo json_encode($users);
+echo json_encode($users);
