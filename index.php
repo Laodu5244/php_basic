@@ -7,8 +7,8 @@
 </body>
 
 <?php 
-if($_POST['name'] && $_POST['age']){
+if(!empty($_POST['name']) && !empty($_POST['age'])){
   echo '你好'.$_POST['name'].'，'.'你'.$_POST['age'].'岁了.';
 } else {
-	echo '姓名/年龄不能为空';
+	echo '请输入姓名/年龄';
 } ?>

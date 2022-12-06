@@ -21,4 +21,4 @@ function pdo() {
 	echo json_encode($heros);
 }
 
-pdo();
+mysqli();
