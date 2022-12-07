@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHP</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="book">
+	<div class="cover">
+		<span>PHP is opening</span>
+	</div>
+	<div class="content">
+		<p>Html</p>
+		<p>Css</p>
+		<p>Js</p>
+		<p>Php</p>
+	</div>
+</div>
+
+<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #dfb883;
+	}
+
+	.book {
+		width: 240px;
+		height: 300px;
+		background-color: #fff;
+		transform-style: preserve-3d;
+		perspective: 2000px;
+		box-shadow: inset 300px 0 30px rgba(0, 0, 0, 0.2);
+		transition: 0.5s;
+	}
+
+	.book:hover {
+		transform: rotate(-10deg);
+		box-shadow: inset 20px 0 30px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.3);
+	}
+
+	.book::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -5px;
+		width: 100%;
+		height: 5px;
+		background-color: #0d2a50;
+		transform-origin: bottom;
+		transform: skewX(-45deg);
+	}
+
+	.book::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -5px;
+		width: 5px;
+		height: 100%;
+		background-color: #3d5a83;
+		transform-origin: left;
+		transform: skewY(-45deg);
+	}
+
+	.book .cover {
+		width: 100%;
+		height: 100%;
+		background-color: #2a3f5c;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		transform-origin: left;
+		transition: 0.5s;
+	}
+
+	.book .cover span {
+		position: absolute;
+		right: 30px;
+		top: 30%;
+		background-color: #fff;
+		font-size: 21px;
+		font-weight: bold;
+		padding: 10px 5px 5px 5px;
+	}
+
+	.book:hover .cover {
+		transform: rotateY(-135deg);
+	}
+
+	.book .content {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		font-size: 25px;
+		font-family: "隶书";
+		line-height: 50px;
+		letter-spacing: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+
+</body>
+</html>
