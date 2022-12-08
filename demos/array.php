@@ -32,3 +32,17 @@ var_dump(array_filter($nums, 'del'));
 // 正则方法
 $ptn = "/\S+/i";
 var_dump(preg_grep($ptn, $nums));
+echo '<hr>';
+
+// 数组去重
+$arr = ['html','html','php'];
+var_dump(array_unique($arr));
+// 去重并调换键值对
+var_dump(array_flip($arr));
+echo '<hr>';
+
+// 获取最后一个元素
+$end = end($arr);
+foreach($arr as $k=>$v){
+	if($v==$end) echo $k.'=>'.$end;
+}
