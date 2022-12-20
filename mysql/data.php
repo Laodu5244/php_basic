@@ -5,7 +5,6 @@ $pdo = new PDO('mysql:host=localhost;dbname=basic', 'root', 'sisisi');
 $res = $pdo->query('select * from heros');
 $res->execute();
 $heros = $res->fetchAll(PDO::FETCH_ASSOC);
-
 // mysqli连接数据库
 $conn = new Mysqli('localhost','root','sisisi','tp');
 $stmt = $conn->query('select * from users');

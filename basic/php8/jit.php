@@ -1,6 +1,6 @@
 <?php
 
-// 返回当前时间戳微妙
+// 返回当前时间戳微秒
 $start = microtime(true);
 $total = 0;
 
