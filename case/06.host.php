@@ -5,8 +5,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<form action="06.php" method="post">
-		<input type="text" name="name" value="123456">
+	<form action="06.host.php" method="post">
 		<input type="submit" value="submit">
 	</form>
 </body>
@@ -21,10 +20,4 @@ if(!empty($_SERVER['HTTP_REFERER'])){
 	} else {
 		echo '可以正常访问';
 	}
-
-	echo '<hr>';
-	$pic = '1.png';
-	$pics = explode('.',$pic);
-	$num = count($pics);
-	echo $pics[$num-1];
 }

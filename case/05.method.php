@@ -1,8 +1,8 @@
 <?php if (!$_GET) : ?>
-	<a href="./05.php?action=add">insert</a>
-	<a href="./05.php?action=del">delete</a>
-	<a href="./05.php?action=upd">update</a>
-	<a href="./05.php?action=read">select</a>
+	<a href="./05.method.php?action=add">insert</a>
+	<a href="./05.method.php?action=del">delete</a>
+	<a href="./05.method.php?action=upd">update</a>
+	<a href="./05.method.php?action=read">select</a>
 <?php 
 else :
 	$action = $_GET['action'];

@@ -12,3 +12,9 @@ $script = <<<script
 </script>
 script;
 echo $script;
+
+echo '<hr>';
+$pic = '1.png';
+$pics = explode('.',$pic);
+$num = count($pics);
+echo $pics[$num-1];
