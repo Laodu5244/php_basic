@@ -1,5 +1,9 @@
 <?php
 
-$list = ['name' => 'Lisa', 'age' => 18];
+$conn = new mysqli('localhost:3388', 'root', 'sisisi', 'study');
 
-echo json_encode($list);
+$stat = $conn->query("SELECT * FROM fruit");
+
+$data = $stat->fetch_all(MYSQLI_ASSOC);
+
+echo json_encode($data);
